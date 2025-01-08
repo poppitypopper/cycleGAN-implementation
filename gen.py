@@ -134,7 +134,7 @@ class dataGenerator(object):
 
         for i in idx:
             out.append(self.images[i])
-            if self.flip and random.random() < 0.5:
+            if self.flip and random.random() <0.5:
                 out[-1] = np.flip(out[-1], 1)
 
         return np.array(out).astype('float32') / 255.0
